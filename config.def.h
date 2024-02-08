@@ -65,12 +65,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ username, " %s ",         NULL       },
-	{ wifi_essid, " %s ",       "wlp3s0"    },
-	{ run_command, " %.5s%% ",  "xbacklight -get" }, 
+	{ wifi_essid, "🛜 %s ",       "wlp3s0"    },
+	{ run_command, "🔆 %.5s%% ",  "xbacklight -get" }, 
 	{ run_command, "%s ",        "~/.config/suckless/slstatus/scripts/volume_icon.sh" },
 	{ run_command, "%s ",        "~/.config/suckless/slstatus/scripts/volume_perc.sh" },
-	{ battery_state, " %s",     "BAT0"     },
+	{ battery_state, "🔋%s",     "BAT0"     },
 	{ battery_perc, "%s%% ",     "BAT0"     },
-	{ datetime, " %s",          "%d/%m/%y %I:%M %p" },
+	{ datetime, "📅 %s",          "%a, %d %b %Y ⏰ %I:%M %p" },
 };
